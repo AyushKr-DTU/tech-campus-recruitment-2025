@@ -9,3 +9,10 @@ It Works on both Linux and Windows.
 Low memory usage since only one line is loaded into memory at a time.
 Simpler to implement and debug.
 Cons: Slightly slower than mmap due to repeated system calls but negligible for our use case.
+
+
+Steps To Run:
+1) Install a C++ Compiler (If Not Installed)
+2)compile the code by  : g++ -O2 -std=c++17 extract_logs.cpp -o extract_logs.exe
+3)run the program by :extract_logs.exe test_logs.log 2024-12-01
+4)The extracted logs will be saved in "output/output_2024-12-01.txt"
